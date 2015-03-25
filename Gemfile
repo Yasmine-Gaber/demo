@@ -37,4 +37,14 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'capistrano'
+  # rails specific capistrano funcitons
+  gem 'capistrano-rails', '~> 1.1.1'
+  
+  # integrate bundler with capistrano
+  gem 'capistrano-bundler'
 
+  # if you are using RBENV
+  # gem 'capistrano-rbenv'#, "~> 2.0" 
+end
